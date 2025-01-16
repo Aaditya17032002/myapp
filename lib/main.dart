@@ -39,7 +39,7 @@ Future<Database> initializeDatabase() async {
 class MyApp extends StatelessWidget {
   final Database database;
 
-  const MyApp({Key? key, required this.database}) : super(key: key);
+  const MyApp({super.key, required this.database});
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   final Database database;
 
-  const MyHomePage({Key? key, required this.database}) : super(key: key);
+  const MyHomePage({super.key, required this.database});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();

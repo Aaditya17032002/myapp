@@ -5,7 +5,7 @@ import 'models/user.dart';
 class SignUpScreen extends StatefulWidget {
   final Future<Database>? database;
 
-  const SignUpScreen({Key? key, required this.database}) : super(key: key);
+  const SignUpScreen({super.key, required this.database});
 
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
